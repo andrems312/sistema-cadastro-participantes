@@ -1,0 +1,46 @@
+{
+  "name": "sistema-cadastro-participantes",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Sistema web de cadastro de participantes/empresas com autenticação, consulta de CNPJ, Google Maps e upload de imagens.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "tsx --test tests/*.test.ts",
+    "seed:dev": "node --env-file=.env.local scripts/seed-dev.mjs",
+    "check:supabase": "node --env-file=.env.local scripts/check-supabase.mjs"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.7.0",
+    "@supabase/supabase-js": "^2.57.4",
+    "clsx": "^2.1.1",
+    "leaflet": "^1.9.4",
+    "lucide-react": "^0.544.0",
+    "next": "^15.5.27",
+    "react": "^19.1.9",
+    "react-dom": "^19.1.9",
+    "react-leaflet": "^5.0.0",
+    "server-only": "^0.0.1",
+    "sonner": "^2.0.7",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3.3.1",
+    "@tailwindcss/postcss": "^4.1.13",
+    "@types/leaflet": "^1.9.22",
+    "@types/node": "^22.18.6",
+    "@types/react": "^19.1.13",
+    "@types/react-dom": "^19.1.9",
+    "eslint": "^9.36.0",
+    "eslint-config-next": "^15.5.27",
+    "tailwindcss": "^4.1.13",
+    "tsx": "^4.20.5",
+    "typescript": "^5.9.2"
+  }
+}
